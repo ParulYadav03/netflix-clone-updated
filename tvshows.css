@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.tv-shows {
+    padding: 60px 30px;
+    background-color: #000; /* Full black like Netflix */
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .tv-shows h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e50914; /* Netflix red */
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+  
+  /* TV show cards layout */
+  .tv-shows-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+    justify-items: center;
+  }
+  
+  .show-card {
+    width: 100%;
+    max-width: 160px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .show-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .show-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  .show-card:hover {
+    transform: scale(1.05);
+  }
+  
